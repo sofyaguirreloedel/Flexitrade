@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Flexitrade — Logística Internacional y Servicios Aduaneros</title>
+  <meta name="description" content="Flexitrade: logística internacional, servicios aduaneros y asesoramiento en comercio exterior. Cobertura marítima, aérea y terrestre.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <!-- Tailwind CSS CDN (Play) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              primary: '#047096',
+              deep: '#0A2A35',
+              light: '#D9D9D9'
+            }
+          },
+          fontFamily: {
+            sans: ['Exo 2','Roboto','Helvetica','Arial','sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+  <style>
+    html { scroll-behavior: smooth; }
+  </style>
+</head>
+<body class="font-sans text-slate-900 bg-white">
+  <!-- Top bar -->
+  <div class="w-full bg-brand-deep text-white text-sm">
+    <div class="max-w-7xl mx-auto flex items-center justify-between px-4 py-2">
+      <div class="flex items-center gap-4">
+        <span class="flex items-center gap-2 opacity-90">
+          <i data-lucide="phone" class="w-4 h-4"></i>
+          +54 3772 636545 &nbsp;|&nbsp; +54 9 11 5910 2222 &nbsp;|&nbsp; +54 9 377 230 0808
+        </span>
+      </div>
+      <div class="hidden md:flex items-center gap-4 opacity-90">
+        <span class="flex items-center gap-2">
+          <i data-lucide="mail" class="w-4 h-4"></i> operaciones.impo@flexitrade.com.ar
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <header class="sticky top-0 z-40 backdrop-blur bg-white/80 border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
+      <div class="flex items-center gap-2">
+        <div class="h-8 w-8 rounded-lg" style="background-color:#047096"></div>
+        <span class="font-bold tracking-wide text-lg text-brand-deep">Flexitrade</span>
+      </div>
+      <nav class="hidden md:flex items-center gap-8 text-sm">
+        <a href="#servicios" class="hover:opacity-80">Servicios</a>
+        <a href="#valor" class="hover:opacity-80">Propuesta</a>
+        <a href="#nosotros" class="hover:opacity-80">Nosotros</a>
+        <a href="#contacto" class="hover:opacity-80">Contacto</a>
+      </nav>
+      <a href="#cotizacion" class="hidden md:inline-flex">
+        <button class="rounded-2xl px-5 py-2 text-white" style="background-color:#047096">Obtener cotización</button>
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="relative overflow-hidden">
+    <div class="absolute inset-0" style="background: linear-gradient(120deg, #0A2A35 0%, #047096 60%, #D9D9D9 120%); opacity: .08;"></div>
+    <div class="relative max-w-7xl mx-auto grid md:grid-cols-2 gap-10 px-4 py-16 md:py-24 items-center">
+      <div>
+        <div class="inline-flex items-center gap-2 rounded-full border border-slate-200 px-3 py-1 text-xs font-medium">
+          <i data-lucide="sparkles" class="w-4 h-4"></i> Innovación • Honestidad • Experiencia
+        </div>
+        <h1 class="text-4xl md:text-5xl font-bold leading-tight mt-4 text-brand-deep">
+          Logística internacional y servicios aduaneros, <span class="text-brand-primary">claros y confiables</span>.
+        </h1>
+        <p class="mt-4 text-slate-600 md:text-lg max-w-prose">
+          Transformamos la complejidad del comercio exterior en soluciones simples y rentables. Desde el origen hasta el destino final, con asesoría estratégica y acompañamiento personalizado.
+        </p>
+        <div class="mt-6 flex flex-wrap gap-3">
+          <a href="#cotizacion"><button class="rounded-2xl px-6 py-3 text-white text-base" style="background-color:#047096">Solicitar cotización</button></a>
+          <a href="#servicios"><button class="rounded-2xl px-6 py-3 text-base border border-slate-300">Ver servicios</button></a>
+        </div>
+
+        <div class="mt-6 grid grid-cols-2 gap-6 text-sm text-slate-600">
+          <div class="flex items-start gap-2"><i data-lucide="check-circle-2" class="w-5 h-5" style="color:#047096"></i><span>Asesoría integral en importación y exportación</span></div>
+          <div class="flex items-start gap-2"><i data-lucide="check-circle-2" class="w-5 h-5" style="color:#047096"></i><span>Cobertura global: marítimo, aéreo, terrestre</span></div>
+          <div class="flex items-start gap-2"><i data-lucide="check-circle-2" class="w-5 h-5" style="color:#047096"></i><span>Optimización de costos y tiempos</span></div>
+          <div class="flex items-start gap-2"><i data-lucide="check-circle-2" class="w-5 h-5" style="color:#047096"></i><span>Seguro puerta a puerta contra todo riesgo</span></div>
+        </div>
+      </div>
+      <div class="md:pl-8">
+        <div class="relative rounded-2xl shadow-2xl overflow-hidden border border-slate-200">
+          <div class="aspect-[16/10] w-full bg-gradient-to-br from-slate-50 to-slate-100"></div>
+          <div class="absolute bottom-0 left-0 right-0 p-4 bg-white/80 backdrop-blur">
+            <p class="text-sm text-slate-700">Forwarders • Despachantes de Aduana • Estudio de Comercio Exterior — todo en un mismo lugar.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Value Proposition -->
+  <section id="valor" class="py-16 md:py-20 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="rounded-2xl border border-slate-200 bg-white p-6">
+          <h3 class="text-xl font-semibold text-brand-deep mb-2">Confiable</h3>
+          <p class="text-slate-600">Actuamos con responsabilidad y transparencia en cada operación.</p>
+        </div>
+        <div class="rounded-2xl border border-slate-200 bg-white p-6">
+          <h3 class="text-xl font-semibold text-brand-deep mb-2">Profesional</h3>
+          <p class="text-slate-600">Equipo experto en comercio internacional y normativa vigente.</p>
+        </div>
+        <div class="rounded-2xl border border-slate-200 bg-white p-6">
+          <h3 class="text-xl font-semibold text-brand-deep mb-2">Proactiva</h3>
+          <p class="text-slate-600">Buscamos soluciones personalizadas, optimizando precios y tiempos.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="servicios" class="py-16 md:py-24">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="mb-10 flex items-end justify-between gap-6">
+        <div>
+          <h2 class="text-3xl md:text-4xl font-bold text-brand-deep">Servicios</h2>
+          <p class="mt-2 text-slate-600 max-w-2xl">Cobertura global y soluciones a medida para cada etapa de tu operación internacional.</p>
+        </div>
+        <a href="#cotizacion" class="hidden md:inline-flex"><button class="rounded-2xl px-4 py-2 text-white" style="background-color:#047096">Cotizar ahora</button></a>
+      </div>
+
+      <div class="grid md:grid-cols-2 xl:grid-cols-3 gap-6">
+        <!-- Asesoría -->
+        <div class="rounded-2xl border border-slate-200 bg-white p-6 h-full">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="h-10 w-10 rounded-xl grid place-items-center text-white" style="background-color:#047096">
+              <i data-lucide="sparkles" class="w-5 h-5"></i>
+            </div>
+            <h3 class="text-xl font-semibold text-brand-deep">Asesoría en Comercio Exterior</h3>
+          </div>
+          <ul class="space-y-2 text-slate-700">
+            <li class="flex gap-2 items-start"><i data-lucide="check-circle-2" class="w-5 h-5 mt-0.5" style="color:#047096"></i><span>Asesoría integral en importación y exportación</span></li>
+            <li class="flex gap-2 items-start"><i data-lucide="check-circle-2" class="w-5 h-5 mt-0.5" style="color:#047096"></i><span>Análisis de mercado y selección de proveedores</span></li>
+            <li class="flex gap-2 items-start"><i data-lucide="check-circle-2" class="w-5 h-5 mt-0.5" style="color:#047096"></i><span>Asesoría bancaria (COM. 6818, 6401, 7030)</span></li>
+            <li class="flex gap-2 items-start"><i data-lucide="check-circle-2" class="w-5 h-5 mt-0.5" style="color:#047096"></i><span>Clasificación arancelaria (NCM / HS CODE)</span></li>
+            <li class="flex gap-2 items-start"><i data-lucide="check-circle-2" class="w-5 h-5 mt-0.5" style="color:#047096"></i><span>Gestión ante INAL, ANMAT, Seguridad Eléctrica, etc.</span></li>
+            <li class="flex gap-2 items-start"><i data-lucide="check-circle-2" class="w-5 h-5 mt-0.5" style="color:#047096"></i><span>Optimización de costos, tiempos y calidad</span></li>
+          </ul>
+        </div>
+
+        <!-- Aéreo -->
+        <div class="rounded-2xl border border-slate-200 bg-white p-6 h-full">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="h-10 w-10 rounded-xl grid place-items-center text-white" style="background-color:#047096">
+              <i data-lucide="plane" class="w-5 h-5"></i>
+            </div>
+            <h3 class="text-xl font-semibold text-brand-deep">Transporte Aéreo</h3>
+          </div>
+          <ul class="space-y-2 text-slate-700">
+            <li class="flex gap-2 items-start"><i data-lucide="check-circle-2" class="w-5 h-5 mt-0.5" style="color:#047096"></i><span>Carga general, IMO, sobredimensionada y perecedera</span></li>
+            <li class="flex gap-2 items-start"><i data-lucide="check-circle-2" class="w-5 h-5 mt-0.5" style="color:#047096"></i><span>Tarifas competitivas y bodegas estratégicas</span></li>
+            <li class="flex gap-2 items-start"><i data-lucide="check-circle-2" class="w-5 h-5 mt-0.5" style="color:#047096"></i><span>Cobertura puerta a puerta (EXW)</span></li>
+            <li class="flex gap-2 items-start"><i data-lucide="check-circle-2" class="w-5 h-5 mt-0.5" style="color:#047096"></i><span>Consolidación de importación y exportación</span></li>
+            <li class="flex gap-2 items-start"><i data-lucide="check-circle-2" class="w-5 h-5 mt-0.5" style="color:#047096"></i><span>Seguro internacional puerta a puerta</span></li>
+          </ul>
+        </div>
+
+        <!-- Marítimo -->
+        <div class="rounded-2xl border border-slate-200 bg-white p-6 h-full">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="h-10 w-10 rounded-xl grid place-items-center text-white" style="background-color:#047096">
+              <i data-lucide="ship" class="w-5 h-5"></i>
+            </div>
+            <h3 class="text-xl font-semibold text-brand-deep">Transporte Marítimo</h3>
+          </div>
+          <ul class="space-y-2 text-slate-700">
+            <li class="flex gap-2 items-start"><i data-lucide="check-circle-2" class="w-5 h-5 mt-0.5" style="color:#047096"></i><span>FCL (contenedor completo) y LCL (consolidado)</span></li>
+            <li class="flex gap-2 items-start"><i data-lucide="check-circle-2" class="w-5 h-5 mt-0.5" style="color:#047096"></i><span>Multimodal: barco, avión, camión y ferrocarril</span></li>
+            <li class="flex gap-2 items-start"><i data-lucide="check-circle-2" class="w-5 h-5 mt-0.5" style="color:#047096"></i><span>Tránsito y transbordo en puntos estratégicos</span></li>
+            <li class="flex gap-2 items-start"><i data-lucide="check-circle-2" class="w-5 h-5 mt-0.5" style="color:#047096"></i><span>Especialistas en Over Size & Over Weight</span></li>
+            <li class="flex gap-2 items-start"><i data-lucide="check-circle-2" class="w-5 h-5 mt-0.5" style="color:#047096"></i><span>Contenedores Open Top, Flat Rack y Reefer</span></li>
+            <li class="flex gap-2 items-start"><i data-lucide="check-circle-2" class="w-5 h-5 mt-0.5" style="color:#047096"></i><span>Seguro contra todo riesgo</span></li>
+          </ul>
+        </div>
+
+        <!-- Terrestre -->
+        <div class="rounded-2xl border border-slate-200 bg-white p-6 h-full">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="h-10 w-10 rounded-xl grid place-items-center text-white" style="background-color:#047096">
+              <i data-lucide="truck" class="w-5 h-5"></i>
+            </div>
+            <h3 class="text-xl font-semibold text-brand-deep">Transporte Terrestre</h3>
+          </div>
+          <ul class="space-y-2 text-slate-700">
+            <li class="flex gap-2 items-start"><i data-lucide="check-circle-2" class="w-5 h-5 mt-0.5" style="color:#047096"></i><span>LTL (cargas consolidadas) y FTL (camión completo)</span></li>
+            <li class="flex gap-2 items-start"><i data-lucide="check-circle-2" class="w-5 h-5 mt-0.5" style="color:#047096"></i><span>Transporte local desde/hacia depósitos</span></li>
+            <li class="flex gap-2 items-start"><i data-lucide="check-circle-2" class="w-5 h-5 mt-0.5" style="color:#047096"></i><span>Seguimiento satelital 24/7</span></li>
+            <li class="flex gap-2 items-start"><i data-lucide="check-circle-2" class="w-5 h-5 mt-0.5" style="color:#047096"></i><span>Calidad, seguridad y costo optimizado</span></li>
+            <li class="flex gap-2 items-start"><i data-lucide="check-circle-2" class="w-5 h-5 mt-0.5" style="color:#047096"></i><span>Alianzas con compañías líderes</span></li>
+          </ul>
+        </div>
+
+        <!-- Seguro -->
+        <div class="rounded-2xl border border-slate-200 bg-white p-6 h-full">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="h-10 w-10 rounded-xl grid place-items-center text-white" style="background-color:#047096">
+              <i data-lucide="shield-check" class="w-5 h-5"></i>
+            </div>
+            <h3 class="text-xl font-semibold text-brand-deep">Seguro Internacional</h3>
+          </div>
+          <ul class="space-y-2 text-slate-700">
+            <li class="flex gap-2 items-start"><i data-lucide="check-circle-2" class="w-5 h-5 mt-0.5" style="color:#047096"></i><span>Cobertura importación, exportación y tránsito</span></li>
+            <li class="flex gap-2 items-start"><i data-lucide="check-circle-2" class="w-5 h-5 mt-0.5" style="color:#047096"></i><span>Puerta a puerta, cualquier destino</span></li>
+            <li class="flex gap-2 items-start"><i data-lucide="check-circle-2" class="w-5 h-5 mt-0.5" style="color:#047096"></i><span>Póliza contra todo riesgo, sin deducible por daños</span></li>
+            <li class="flex gap-2 items-start"><i data-lucide="check-circle-2" class="w-5 h-5 mt-0.5" style="color:#047096"></i><span>Protección del 100% de la suma asegurada</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Nosotros / Presencia -->
+  <section id="nosotros" class="py-16 md:py-20 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-10 items-center">
+      <div>
+        <h3 class="text-3xl font-bold text-brand-deep">Quiénes somos</h3>
+        <p class="mt-4 text-slate-700 leading-relaxed">
+          Flexitrade es una empresa argentina especializada en logística internacional, servicios aduaneros y asesoramiento en comercio exterior. Trabajamos con una extensa red de agentes para gestionar envíos marítimos, aéreos, terrestres y multimodales con compromiso, responsabilidad y profesionalismo.
+        </p>
+        <ul class="mt-6 space-y-2 text-slate-700">
+          <li class="flex gap-2"><i data-lucide="check-circle-2" class="w-5 h-5 mt-0.5" style="color:#047096"></i><span>Misión: acompañar a empresas en sus procesos de comercio exterior con soluciones confiables, personalizadas y eficientes.</span></li>
+          <li class="flex gap-2"><i data-lucide="check-circle-2" class="w-5 h-5 mt-0.5" style="color:#047096"></i><span>Visión: ser reconocidos por experiencia e innovación para ayudar a los clientes a alcanzar sus metas, a nivel nacional e internacional.</span></li>
+          <li class="flex gap-2"><i data-lucide="check-circle-2" class="w-5 h-5 mt-0.5" style="color:#047096"></i><span>Valores: Experiencia • Honestidad • Responsabilidad • Creatividad • Innovación.</span></li>
+        </ul>
+      </div>
+      <div>
+        <div class="rounded-2xl border border-slate-200 bg-white p-6">
+          <h4 class="text-xl font-semibold text-brand-deep mb-3">Presencia</h4>
+          <p class="flex items-center gap-2 text-slate-700"><i data-lucide="map-pin" class="w-5 h-5"></i> Paso de los Libres • Buenos Aires</p>
+          <p class="text-sm text-slate-600 mt-2">En el corto plazo: expansión a nuevos puntos del país. A largo plazo: Brasil y China.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cotización -->
+  <section id="cotizacion" class="py-16 md:py-24">
+    <div class="max-w-5xl mx-auto px-4">
+      <div class="rounded-3xl border border-slate-200 shadow-sm overflow-hidden">
+        <div class="grid md:grid-cols-2">
+          <div class="p-8 md:p-10 bg-white">
+            <h3 class="text-2xl md:text-3xl font-bold text-brand-deep">Obtené tu cotización</h3>
+            <p class="mt-2 text-slate-600">Contanos sobre tu operación y un especialista te contactará.</p>
+            <!-- Replace action with your CRM endpoint or FormSubmit email endpoint -->
+            <form class="mt-6 grid grid-cols-1 gap-4" action="https://formsubmit.co/operaciones.impo@flexitrade.com.ar" method="POST">
+              <input type="hidden" name="_subject" value="Nueva consulta desde la web de Flexitrade">
+              <input type="hidden" name="_captcha" value="false">
+              <input class="w-full rounded-xl border border-slate-300 px-4 py-3" name="name" placeholder="Nombre y Apellido" required>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <input class="w-full rounded-xl border border-slate-300 px-4 py-3" name="company" placeholder="Compañía">
+                <input class="w-full rounded-xl border border-slate-300 px-4 py-3" name="phone" placeholder="Teléfono">
+              </div>
+              <input class="w-full rounded-xl border border-slate-300 px-4 py-3" name="email" placeholder="Email" type="email" required>
+              <textarea class="w-full rounded-xl border border-slate-300 px-4 py-3 min-h-[120px]" name="message" placeholder="¿Cómo podemos ayudarte?" required></textarea>
+              <button type="submit" class="rounded-2xl h-12 text-base text-white" style="background-color:#047096">Enviar consulta</button>
+              <p class="text-xs text-slate-500">Al enviar aceptás ser contactadx por nuestro equipo. Cuidamos tus datos.</p>
+            </form>
+          </div>
+          <div class="p-8 md:p-10 text-white" style="background: linear-gradient(140deg, #0A2A35, #047096)">
+            <div class="space-y-4">
+              <h4 class="text-xl font-semibold">¿Por qué Flexitrade?</h4>
+              <ul class="space-y-2 text-white/90">
+                <li class="flex gap-2 items-start"><i data-lucide="check-circle-2" class="w-5 h-5 mt-0.5"></i><span>Equipo experto y cercano</span></li>
+                <li class="flex gap-2 items-start"><i data-lucide="check-circle-2" class="w-5 h-5 mt-0.5"></i><span>Acompañamiento puerta a puerta</span></li>
+                <li class="flex gap-2 items-start"><i data-lucide="check-circle-2" class="w-5 h-5 mt-0.5"></i><span>Optimización de costos y tiempos</span></li>
+                <li class="flex gap-2 items-start"><i data-lucide="check-circle-2" class="w-5 h-5 mt-0.5"></i><span>Seguro internacional sin deducible por daños</span></li>
+              </ul>
+              <div class="pt-2 space-y-1">
+                <p class="font-medium">¿Preferís hablar ahora?</p>
+                <p class="flex items-center gap-2"><i data-lucide="phone" class="w-4 h-4"></i> +54 3772 636545</p>
+                <p class="flex items-center gap-2"><i data-lucide="mail" class="w-4 h-4"></i> operaciones.impo@flexitrade.com.ar</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Strip -->
+  <section class="py-10 bg-slate-900">
+    <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-6">
+      <p class="text-white text-lg font-medium">Listos para llevar tu negocio a nuevos mercados.</p>
+      <a href="#cotizacion"><button class="rounded-2xl px-4 py-2 text-white" style="background-color:#047096">Empezar <i data-lucide='arrow-right' class='inline-block w-4 h-4 ml-1'></i></button></a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="contacto" class="bg-white border-t border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 py-10 grid md:grid-cols-4 gap-8">
+      <div>
+        <div class="flex items-center gap-2">
+          <div class="h-8 w-8 rounded-lg" style="background-color:#047096"></div>
+          <span class="font-bold tracking-wide text-lg text-brand-deep">Flexitrade</span>
+        </div>
+        <p class="mt-3 text-sm text-slate-600 max-w-xs">Experiencia, honestidad, responsabilidad, creatividad e innovación al servicio de tu comercio exterior.</p>
+      </div>
+      <div>
+        <h5 class="font-semibold mb-3 text-brand-deep">Servicios</h5>
+        <ul class="space-y-2 text-sm text-slate-600">
+          <li>Asesoría en COMEX</li>
+          <li>Transporte Aéreo</li>
+          <li>Transporte Marítimo</li>
+          <li>Transporte Terrestre</li>
+          <li>Seguro Internacional</li>
+        </ul>
+      </div>
+      <div>
+        <h5 class="font-semibold mb-3 text-brand-deep">Ubicaciones</h5>
+        <ul class="space-y-2 text-sm text-slate-600">
+          <li>Paso de los Libres</li>
+          <li>Buenos Aires</li>
+        </ul>
+      </div>
+      <div>
+        <h5 class="font-semibold mb-3 text-brand-deep">Contacto</h5>
+        <ul class="space-y-2 text-sm text-slate-600">
+          <li class="flex items-center gap-2"><i data-lucide="phone" class="w-4 h-4"></i> +54 3772 636545</li>
+          <li class="flex items-center gap-2"><i data-lucide="phone" class="w-4 h-4"></i> +54 9 11 5910 2222</li>
+          <li class="flex items-center gap-2"><i data-lucide="phone" class="w-4 h-4"></i> +54 9 377 230 0808</li>
+          <li class="flex items-center gap-2"><i data-lucide="mail" class="w-4 h-4"></i> operaciones.impo@flexitrade.com.ar</li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-slate-200 py-6 text-center text-xs text-slate-500">© <span id="y"></span> Flexitrade. Todos los derechos reservados.</div>
+  </footer>
+
+  <script>
+    lucide.createIcons();
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
